@@ -55,7 +55,8 @@ name: Go
 on:
   push:
     branches: [ "main" ]
-	The name parameter just names this workflow as Go. on: push: branches: part of the workflow file mentions the list of branches for which the workflow should be triggered automatically. In this case, we want the workflow to trigger automatically for the ‘main’ branch.
+```
+### The name parameter just names this workflow as Go. on: push: branches: part of the workflow file mentions the list of branches for which the workflow should be triggered automatically. In this case, we want the workflow to trigger automatically for the ‘main’ branch.
 
 # Step 3: Configure a build job
 ### Large applications written in the Go programming language require a build step because it is a statically typed, compiled language. This generates a binary, which is then deployed to the servers. The first job, which we define in the workflow, is to build this binary. 
@@ -124,4 +125,5 @@ func TestAdditionHandler(t *testing.T) {
       run: go test -v ./...
 ```
 ### Push the code to the main branch and observe the pipeline run. As seen from the screenshot below, the test cases are run during the ‘Test’ step and their results are also printed in the logs.
+
 
