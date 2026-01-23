@@ -57,6 +57,7 @@ Access the application at http://localhost:5000/
 git init
 git add .
 git commit -m "Initial commit"
+git branch -M main
 git remote add origin <your-repo-url>
 git push -u origin main
 ```
@@ -104,3 +105,4 @@ stage('Run Docker Container') {
 ## Once the pipeline finishes, check if the Flask app is running:
 
 Access the API at http://<server-ip>:5000/.
+
