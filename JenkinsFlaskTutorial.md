@@ -1,7 +1,7 @@
  # Step 1: Create a Simple Flask API
 
 
-## Create app.py
+Create app.py
 
 ``` 
 from flask import Flask, jsonify
@@ -15,7 +15,7 @@ if __name__ == "__main__":
 ```
     
 
-## Create a Virtual Environment and Install Flask
+Create a Virtual Environment and Install Flask
 
 ```
  python3 -m venv venv
@@ -40,18 +40,18 @@ RUN pip install -r requirements.txt
 COPY . .
 CMD ["python", "app.py"]
 ```
-## Create a requirements.txt file with the following content:
+Create a requirements.txt file with the following content:
 
 flask
 
-## Build and Run the Docker Container
-## Build the Docker image:
+Build and Run the Docker Container
+Build the Docker image:
 ` docker build -t flask-api . `
-## Run the Docker container:
+Run the Docker container:
 ` docker run -d -p 5000:5000 flask-api `
 Access the application at http://localhost:5000/
 # Step 3: Set Up a Git Repository
-## Initialize a Git repository for the Flask application:
+Initialize a Git repository for the Flask application:
 ```
 git init
 git add .
@@ -104,5 +104,6 @@ Monitor the console output to ensure each stage completes successfully.
 Once the pipeline finishes, check if the Flask app is running:
 
 Access the API at http://<server-ip>:5000/.
+
 
 
