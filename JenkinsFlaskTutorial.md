@@ -1,8 +1,7 @@
+ # Step 1: Create a Simple Flask API
 
-# Step 1: Create a Simple Flask API
 
-
-# Create app.py
+## Create app.py
 
 ``` 
 from flask import Flask, jsonify
@@ -16,7 +15,7 @@ if __name__ == "__main__":
 ```
     
 
-# Create a Virtual Environment and Install Flask
+## Create a Virtual Environment and Install Flask
 
 ```
  python3 -m venv venv
@@ -62,13 +61,13 @@ git remote add origin <your-repo-url>
 git push -u origin main
 ```
 # Step 4: Configure Jenkins Pipeline
-## Create a Jenkins Job
-## Log in to Jenkins.
-## Click on New Item.
-## Select Pipeline and name the job (e.g., “Flask API Deployment”).
-## Click OK.
-## Define the Pipeline
-## In the Pipeline section, choose Pipeline script and paste the following code:
+Create a Jenkins Job
+Log in to Jenkins.
+Click on New Item.
+Select Pipeline and name the job (e.g., “Flask API Deployment”).
+Click OK.
+Define the Pipeline
+In the Pipeline section, choose Pipeline script and paste the following code:
 
 ```
 pipeline {
@@ -96,13 +95,14 @@ stage('Run Docker Container') {
     }
 }
 ```
-## Replace <your-repo-url> with your Git repository URL.
+Replace <your-repo-url> with your Git repository URL.
 # Step 5: Test the Jenkins Pipeline
-## Save the Jenkins job configuration.
-## Click Build Now.
-## Monitor the console output to ensure each stage completes successfully.
+Save the Jenkins job configuration.
+Click Build Now.
+Monitor the console output to ensure each stage completes successfully.
 # Step 6: Verify the Deployment
-## Once the pipeline finishes, check if the Flask app is running:
+Once the pipeline finishes, check if the Flask app is running:
 
 Access the API at http://<server-ip>:5000/.
+
 
