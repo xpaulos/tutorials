@@ -1,39 +1,39 @@
 
 # Run and connect to ubuntu container
 
-docker run -it ubuntu /bin/bash
+`docker run -it ubuntu /bin/bash`
 
 # Observe the running container
-docker ps -a
+`docker ps -a`
 
 # Check the available local images
-docker image ls
+`docker image ls`
 
 # Pull and image 
-docker pull <name>:<tag>. 
-docker pull nginx
+`docker pull <name>:<tag>`
+`docker pull nginx`
 
 # Run the image in a Container
-docker run nginx -p 8084:80
+`docker run nginx -p 8084:80`
 
 # Stop the containers
-docker stop < container name >
+`docker stop < container name >`
 
 # Delete the container
-docker rm <container>. 
+`docker rm <container>`
 
 # Delete the images
-docker rmi <image>. 
+`docker rmi <image>`
 
 
 
 # Create a personal network
 
-docker network create my-app-network
+`docker network create my-app-network`
 
 
 # Create a volume
-docker volume create my-database-data
+`docker volume create my-database-data`
 
 
 # Create your own mysql with Docker
@@ -57,3 +57,4 @@ docker run -d \
 # Push Image to dockerhub
   
 ` docker push my-registry.example.com/my-repo/my-local-image:latest `
+
